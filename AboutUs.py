@@ -27,7 +27,7 @@ text1 = """Créé le 1er Octobre 2021, SDA est spécialisé dans la fourniture
             de services Cloud, d'IA générative, de Machine Learning et 
             de construction d'infrastructures de données. Nous possédons 
             des experts et spécialistes métiers dans: la Banque-finance, 
-            l'Agriculture, la Santé et l'économie. Notre modèle business
+            l'Assurance, la Santé et la technologie informatique. Notre modèle business
             innovant s'appuie principalement sur la capitalisation de l'expérience
             client, ce qui nous permet d'améliorer continuellement nos services et 
             produits fournis."""
@@ -49,55 +49,49 @@ col1.image("images/bank.jpg")
 col1.markdown(f"""<div style="text-align: justify;color: darkblue;
             ">BANQUE</div>""",unsafe_allow_html=True)
 col2.image("images/economie.jpg")
-col2.markdown(f"""<div style="text-align: justify;color: blue;
-            ">ECONOMIE</div>""",unsafe_allow_html=True)
+col2.markdown(f"""<div style="text-align: justify;color: darkblue;
+            ">ASSURANCE</div>""",unsafe_allow_html=True)
 col3.image("images/sante.jpg")
-col3.markdown(f"""<div style="text-align: justify;color: steelblue;
+col3.markdown(f"""<div style="text-align: justify;color: darkblue;
             ">SANTE</div>""",unsafe_allow_html=True)
-col4.image("images/agriculture.jpg")
-col4.markdown(f"""<div style="text-align: justify;color: green;
-            ">AGRICULTURE</div>""",unsafe_allow_html=True)
+col4.image("images/technologie.png")
+col4.markdown(f"""<div style="text-align: justify;color: darkblue;
+            ">TECHNOLOGIE</div>""",unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)  # Saut de ligne 
 
 st.markdown("""<h2 style="text-align: center; color: darkblue;
-                ">Présentation de l'équipe</h2>""", 
+                ">Présentation </h2>""", 
                 unsafe_allow_html=True
                 )
 
-col1, col2, col3, col4 = st.columns(4)
+col = st.columns(1)[0]
 
-col1.subheader("Co-founder")
-col1.image("images/fanta.jpg")
-text1 = """Titulaire d'un double diplôme en MBA Audit, Contôle
-            de Gestion & Data Analytics, Mme Sanogo Fanta est spécialiste
-             en risques de marchés, de crédits et financements structurés."""
-col1.markdown(f"""<div style="text-align: justify;">{text1}</div>""",
-                unsafe_allow_html=True
-                )
 
-col2.subheader("Co-founder")
-col2.image("images/ilias.jpg")
-text2 = """Fort d'une expérience de 7 ans chez Barclays, en qualité 
-           de Data Engineer Senior, M. Ilias Benlarbi est responsable 
-           de l'architecture des données clients de SDA."""
-col2.markdown(f"""<div style="text-align: justify;">{text2}</div>""",
-                unsafe_allow_html=True
-                )
+col.markdown(
+    """
+    <div style="text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background-color: rgba(0, 128, 250, 0.5);">
+        <p style="font-size: 16px; color: #333;">
+            Bonjour, je suis Fanta Sanogo, actuellement en formation de data analyst à l'université Paris 1 Panthéon-Sorbonne niveau Master 1.
+        </p> 
+        <p style="font-size: 16px; color: #333;">
+            Ce projet combine plusieurs compétences (Python, SQL, Streamlit, statistique descriptive, gestion de projet, machine learning, data management,
+            text mining) pour faciliter la prise de décisions stratégiques.
+        </p>
+        <p style="font-size: 16px; color: #333;">
+            Mon objectif est d'intégrer un groupe, une start-up ou une entreprise où je pourrais, grâce à mon expertise et mes compétences, contribuer à
+            accroître leur notoriété.
+        </p>
+        <p style="font-size: 16px; color: #333;">
+            Je souhaite rejoindre une équipe dynamique dans laquelle je pourrais être une force d'exécution, contribuant à atteindre les objectifs fixés.
+        </p>
+        <p style="font-size: 16px; color: #333;">
+            Naviguez entre les différents onglets pour découvrir les pages de mon projet Streamlit.
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
-col3.subheader("President")
-col3.image("images/robin.jpg")
-text3 = """Titulaire d'un PhD. en Finance Internationale & Expert
-            en Risques pays et bancaires, M. Robin Wabo préside
-            SDA Group."""
-col3.markdown(f"""<div style="text-align: justify;">{text3}</div>""",
-                unsafe_allow_html=True
-                )
 
-col4.subheader("Director")
-col4.image("images/atji.jpg") 
-text4 = """Statisticien Senior & Data Analyst, M. Atji Cheick
-           est spécialiste en Analyse Quantitative de Risques."""
-col4.markdown(f"""<div style="text-align: justify;">{text4}</div>""",
-                unsafe_allow_html=True
-                )
+
