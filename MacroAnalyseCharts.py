@@ -85,13 +85,16 @@ def filter_and_display(col,sidebar_title,mutiselect_label):
 ############################################ PROJET ############################################
 st.sidebar.title("Outil de recherche avancée des fraudes")
 
-# Charger les données dans Streamlit
-uploaded_file = st.sidebar.file_uploader("Téléchargez un fichier CSV", type=["csv"])
+# charger directement les données depuis un fichier local
+file_path = "data/fraud_data.csv"
 
-if uploaded_file:
-    # Lire les données
-    filtered_data = pd.read_csv(uploaded_file)
-    # st.write(filtered_data.head())
+try:
+    filtered_data = pd.read_csv(file_path)
+
+except FileNotFoundError:
+    st.error("le fichier fraud_data.csv est introuvable")
+
+else:
 
     #Données descriptives
     fraud_amt_sum = filtered_data['amt'].sum()
