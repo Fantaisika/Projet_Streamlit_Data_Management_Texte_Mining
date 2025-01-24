@@ -13,7 +13,7 @@ random.seed(123)
 #===========================================================
 
 #Chargement de métadonnées1 sur les variables d'origine
-metadonnees1 = load_data(file_links["metadonees1.csv"])
+metadonnees1 = load_data(file_links["metadonnees1.csv"])
 
 #Chargement de métadonnées2 sur les variables calculées
 metadonnees2 = load_data(file_links["metadonnees2.csv"])
