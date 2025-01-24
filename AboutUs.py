@@ -54,7 +54,7 @@ col2.markdown(f"""<div style="text-align: justify;color: darkblue;
 col3.image("images/sante.jpg")
 col3.markdown(f"""<div style="text-align: justify;color: darkblue;
             ">SANTE</div>""",unsafe_allow_html=True)
-col4.image("images/technologie.png")
+col4.image("images/Technologie.png")
 col4.markdown(f"""<div style="text-align: justify;color: darkblue;
             ">TECHNOLOGIE</div>""",unsafe_allow_html=True)
 
