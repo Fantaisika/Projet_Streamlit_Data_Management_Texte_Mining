@@ -40,7 +40,7 @@ file_links = {
     "fraud_data.csv": "https://drive.google.com/uc?id=1hmHY7yyb6ZhXW9nOVnWAbRRCmpmoPSCI",
     "individual_data_a.csv": "https://drive.google.com/uc?id=1kAKzlJb6fH4zemD82NIp-embIXvdLku3",
     "individual_data_b.csv": "https://drive.google.com/uc?id=1qKMgGGFADyLpsnsL74IqKDcIeWDvhp4A",
-    "metadonees1.csv": "https://drive.google.com/uc?id=1bSS-7o9_Az-9sNbxEz7cREkD91W1TH_v",
+    "metadonnees1.csv": "https://drive.google.com/uc?id=1bSS-7o9_Az-9sNbxEz7cREkD91W1TH_v",
     "metadonnees2.csv": "https://drive.google.com/uc?id=1-Eo_E8dCjUInsuxk-1OjgycwjN5nggjd",
 }
 
