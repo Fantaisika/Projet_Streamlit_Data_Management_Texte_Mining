@@ -1,7 +1,7 @@
 # Ignorer les fichiers avec les extensions qui suivent
 
 *.pdf
-*.csv
+data/*.csv
 # Ignorer mon environnement virtuel
 env/
 
