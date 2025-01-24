@@ -13,10 +13,10 @@ random.seed(123)
 #===========================================================
 
 #Chargement de métadonnées1 sur les variables d'origine
-metadonnees1 = pd.read_csv(file_links["metadonnees1.csv"])
+metadonnees1 = pd.read_csv(https://drive.google.com/uc?id=1bSS-7o9_Az-9sNbxEz7cREkD91W1TH_v)
 
 #Chargement de métadonnées2 sur les variables calculées
-metadonnees2 = pd.read_csv(file_links["metadonnees2.csv"])
+metadonnees2 = pd.read_csv(https://drive.google.com/uc?id=1-Eo_E8dCjUInsuxk-1OjgycwjN5nggjd)
 
 #===========================================================
 # Construction de la page
