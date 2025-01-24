@@ -13,9 +13,9 @@ random.seed(123)
 # Chargement des données
 #===========================================================
 
-individual = pd.read_csv('data/individual_data_a.csv')
+individual = pd.read_csv("https://drive.google.com/uc?id=1kAKzlJb6fH4zemD82NIp-embIXvdLku3")
 
-financial = pd.read_csv('data/financial_clean.csv')
+financial = pd.read_csv("https://drive.google.com/uc?id=1IsYVfxiNiO-VykQYO1P_-_jhAKI_MztL")
 
 #==========================================================
 # Construction de la page
