@@ -30,6 +30,27 @@ st.set_page_config(
 )
 
 #==========================================================
+#=========================================================
+#chargement des fichiers depuis google drive
+#===============================================
+# Dictionnaire pour stocker les liens des fichiers CSV
+file_links = {
+    "credit_card_transactions.csv": "https://drive.google.com/uc?id=15EVo4VGeqrZl2BwnwMEypd52lFGELn79",
+    "financial_clean.csv": "https://drive.google.com/uc?id=1IsYVfxiNiO-VykQYO1P_-_jhAKI_MztL",
+    "fraud_data.csv": "https://drive.google.com/uc?id=1hmHY7yyb6ZhXW9nOVnWAbRRCmpmoPSCI",
+    "individual_data_a.csv": "https://drive.google.com/uc?id=1kAKzlJb6fH4zemD82NIp-embIXvdLku3",
+    "individual_data_b.csv": "https://drive.google.com/uc?id=1qKMgGGFADyLpsnsL74IqKDcIeWDvhp4A",
+    "metadonees1.csv": "https://drive.google.com/uc?id=1bSS-7o9_Az-9sNbxEz7cREkD91W1TH_v",
+    "metadonnees2.csv": "https://drive.google.com/uc?id=1-Eo_E8dCjUInsuxk-1OjgycwjN5nggjd",
+}
+
+@st.cache_data
+def load_data(file_url):
+    try:
+        return pd.read_csv(file_url)
+    except Exception as e:
+        st.error(f"Erreur lors du chargement des données : {e}")
+        return None
 # Execution des pages
 #==========================================================
 
